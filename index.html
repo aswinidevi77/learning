@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up</title>
+</head>
+<body>
+
+    <div class="form-container">
+        <!-- Login Form -->
+        <div class="login-form active">
+            <h2>Login</h2>
+            <form action="#" method="POST">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit" class="submit-btn">Login</button>
+
+                <div class="link">
+                    <p>Don't have an account? <a href="javascript:void(0);" onclick="document.querySelector('.login-form').classList.remove('active'); document.querySelector('.signup-form').classList.add('active');">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="signup-form">
+            <h2>Sign Up</h2>
+            <form action="#" method="POST">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="signup-email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="signup-password" name="password" required>
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+
+                <button type="submit" class="submit-btn">Sign Up</button>
+
+                <div class="link">
+                    <p>Already have an account? <a href="javascript:void(0);" onclick="document.querySelector('.signup-form').classList.remove('active'); document.querySelector('.login-form').classList.add('active');">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
