@@ -5,9 +5,9 @@ const password = document.querySelector('#password');
 const confirmpassword = document.querySelector('#cpassword');
 
 form.addEventListener('submit', (e) => {
-    e.preventDefault();  // Prevent form submission to run validation first
+    e.preventDefault();  
     if (validateInputs()) {
-        form.submit(); // Submit the form if validation passes
+        form.submit(); 
     }
 });
 
@@ -53,7 +53,7 @@ function validateInputs() {
         setSuccess(confirmpassword);
     }
 
-    return isValid; // Return true if all fields are valid, false if any are invalid
+    return isValid; 
 }
 
 function setError(element, message) {
